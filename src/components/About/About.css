@@ -1,0 +1,28 @@
+.about {
+    display: grid;
+    grid-template-columns: 770px 1fr;
+    grid-template-rows: 0% 300px 1fr;
+    grid-column-gap: 40px;
+}
+
+.about__photo-container {
+    width: 770px;
+    height: 780px;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.about__description {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 610px;
+}
+
+.about__description__item {
+    margin: 0 0 35px 0;
+    line-height: 111%;
+}
