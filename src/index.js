@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './index.css';
 import App from './App';
-import NotFound from './components/NotFound';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Router>
-    <Switch>
-        <Route path={process.env.PUBLIC_URL + '/'} component={App} />
-        <Route component={NotFound} />
-    </Switch>
-  </Router>,
+  <App/>,
   document.getElementById('root')
 );
 
