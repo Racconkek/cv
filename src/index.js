@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <Router>
     <Switch>
-        <Route exact path="/" component={App} />
+        <Route path={process.env.PUBLIC_URL + '/'} component={App} />
         <Route component={NotFound} />
     </Switch>
   </Router>,
